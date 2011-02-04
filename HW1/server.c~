@@ -117,7 +117,7 @@ void play(){
       if(dnum > pnum){
         send_msg("lose", client_sock);
         return;
-      }else if(dnum < pnum){
+      }else if(pnum < dnum){
         send_msg("win", client_sock);
         return;
       }else{
