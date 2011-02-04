@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h> 
+#include <stdio.h>
 
 int place = 0;
 
@@ -12,7 +13,7 @@ void init_deck(){
     deck[i] = (Card)malloc(sizeof(struct card));
   }
   
-  for(i = 0; i < 4; i++){
+  for(i = 0; i < 52; i += 13){
     deck[i]->value = 11;
     strcpy(deck[i]->rep, "A");
     deck[i+1]->value = 2;

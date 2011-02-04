@@ -30,7 +30,9 @@ int main() {
   setup();
   play();
   
+  send_msg("msg", client_sock);
   send_msg( "The game has ended\n", client_sock );
+  send_msg("quit", client_sock);
 
   terminate_socket( client_sock );
   terminate_socket( server_sock );
@@ -58,6 +60,7 @@ void setup(){
   
   send_msg("msg", client_sock);
   sprintf(String, "Player: %s %s\n", player[0]->rep, player[1]->rep);
+  send_msg(String, client_sock);
     
 }
   
@@ -90,6 +93,8 @@ void play(){
       if(pnum > 21){
         send_msg("lose", client_sock);
         return;
+      }else{
+        send_msg("inp", client_sock);
       }
     }else{
       while(dnum < 17){
@@ -109,8 +114,12 @@ void play(){
       if(dnum > pnum){
         send_msg("lose", client_sock);
         return;
-      }else{
+      }else if(pnum < dnum){
         send_msg("win", client_sock);
+        return;
+      }else{
+        send_msg("tie", client_sock);
+        return;
       }
     }
   }
