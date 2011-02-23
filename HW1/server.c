@@ -30,9 +30,9 @@ int main() {
   setup();
   play();
   
-  send_msg("msg", client_sock);
-  sprintf(String, "dealer: %d, client %d\n", dnum, pnum);
-  send_msg(String, client_sock);
+  //send_msg("msg", client_sock);
+  //sprintf(String, "dealer: %d, client %d\n", dnum, pnum);
+  //send_msg(String, client_sock);
   send_msg("msg", client_sock);
   send_msg( "The game has ended\n", client_sock );
   send_msg("quit", client_sock);
