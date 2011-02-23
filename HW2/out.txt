@@ -1,0 +1,63 @@
+time: 1
+ *Floor 1: elevator ();
+  Floor 2: 
+  Floor 3: 
+  Floor 4: 
+time: 2
+  Floor 1: elevator (R-00);
+  Floor 2: 
+  Floor 3: 
+ *Floor 4: 
+time: 3
+  Floor 1: 
+  Floor 2: elevator (R-00);
+  Floor 3: 
+ *Floor 4: R-01 @ t=3, 1;
+time: 4
+  Floor 1: 
+  Floor 2: 
+  Floor 3: elevator (R-00);
+ *Floor 4: R-01 @ t=3, 1;
+time: 5
+  Floor 1: 
+  Floor 2: 
+ *Floor 3: R-02 @ t=5, 2;
+  Floor 4: elevator ();R-01 @ t=3, 1;
+time: 6
+  Floor 1: 
+ *Floor 2: 
+  Floor 3: elevator (R-02);
+  Floor 4: R-01 @ t=3, 1;
+time: 7
+  Floor 1: 
+  Floor 2: elevator ();
+  Floor 3: 
+ *Floor 4: R-01 @ t=3, 1;
+time: 8
+  Floor 1: 
+  Floor 2: 
+  Floor 3: elevator ();
+ *Floor 4: R-01 @ t=3, 1;
+time: 9
+ *Floor 1: 
+  Floor 2: 
+  Floor 3: 
+  Floor 4: elevator (R-01);
+time: 10
+ *Floor 1: 
+  Floor 2: 
+  Floor 3: elevator (R-01);
+  Floor 4: 
+time: 11
+ *Floor 1: 
+  Floor 2: elevator (R-01);
+  Floor 3: 
+  Floor 4: 
+time: 12
+ *Floor 1: elevator ();
+  Floor 2: 
+  Floor 3: 
+  Floor 4: 
+
+Average wait time: 4.666667
+Average utilization: 58%
