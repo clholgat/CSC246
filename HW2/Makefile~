@@ -8,6 +8,3 @@ sjf: setup.c setup.h sjf.c
 	$(CC) $(CFLAGS) -g -o sjf setup.c sjf.c 
 	
 all: fcfs sjf
-
-clean:
-	rm -f fcfs sjf
