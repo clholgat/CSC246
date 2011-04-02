@@ -1,0 +1,31 @@
+time: 1
+* barn 00: empty
+
+time: 2
+retrieve chicken
+* barn 00: empty
+  page 00: chicken @ long-term pasture
+
+time: 3
+tend chicken
+* barn 00: empty
+  page 00: chicken @ in transit
+
+time: 4
+blocked on transit
+* barn 00: empty
+  page 00: chicken @ in transit
+
+time: 5
+return chicken
+* barn 00: empty
+  page 00: chicken @ in transit
+
+time: 6
+* barn 00: empty
+  page 00: chicken @ in transit
+
+time: 7
+* barn 00: empty
+  page 00: chicken @ long-term pasture
+

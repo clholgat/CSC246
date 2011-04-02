@@ -1,0 +1,136 @@
+time: 1
+retrieve chicken
+* barn 00: empty
+  barn 01: empty
+  page 00: chicken @ long-term pasture
+
+time: 2
+retrieve sheep
+* barn 00: empty
+  barn 01: empty
+  page 00: chicken @ long-term pasture
+  page 01: sheep @ long-term pasture
+
+time: 3
+retrieve horse
+* barn 00: empty
+  barn 01: empty
+  page 00: chicken @ long-term pasture
+  page 01: sheep @ long-term pasture
+  page 02: horse @ long-term pasture
+
+time: 4
+tend chicken
+* barn 00: empty
+  barn 01: empty
+  page 00: chicken @ in transit
+  page 01: sheep @ long-term pasture
+  page 02: horse @ long-term pasture
+
+time: 5
+blocked on transit
+* barn 00: empty
+  barn 01: empty
+  page 00: chicken @ in transit
+  page 01: sheep @ long-term pasture
+  page 02: horse @ long-term pasture
+
+time: 6
+tend sheep
+* barn 00: chicken (bit=1)
+  barn 01: empty
+  page 00: chicken @ barn
+  page 01: sheep @ in transit
+  page 02: horse @ long-term pasture
+
+time: 7
+blocked on transit
+* barn 00: chicken (bit=1)
+  barn 01: empty
+  page 00: chicken @ barn
+  page 01: sheep @ in transit
+  page 02: horse @ long-term pasture
+
+time: 8
+tend horse
+* barn 00: chicken (bit=1)
+  barn 01: sheep (bit=1)
+  page 00: chicken @ barn
+  page 01: sheep @ barn
+  page 02: horse @ in transit
+
+time: 9
+* barn 00: chicken (bit=1)
+  barn 01: sheep (bit=1)
+  page 00: chicken @ barn
+  page 01: sheep @ barn
+  page 02: horse @ in transit
+
+time: 10
+  barn 00: horse (bit=1)
+* barn 01: sheep (bit=0)
+  page 00: chicken @ in transit
+  page 01: sheep @ barn
+  page 02: horse @ barn
+
+time: 11
+  barn 00: horse (bit=1)
+* barn 01: sheep (bit=0)
+  page 00: chicken @ nearby pasture
+  page 01: sheep @ barn
+  page 02: horse @ barn
+
+time: 12
+return chicken
+  barn 00: horse (bit=1)
+* barn 01: sheep (bit=0)
+  page 00: chicken @ in transit
+  page 01: sheep @ barn
+  page 02: horse @ barn
+
+time: 13
+blocked on transit
+  barn 00: horse (bit=1)
+* barn 01: sheep (bit=0)
+  page 00: chicken @ in transit
+  page 01: sheep @ barn
+  page 02: horse @ barn
+
+time: 14
+return sheep
+* barn 00: horse (bit=1)
+  barn 01: empty
+  page 00: chicken @ long-term pasture
+  page 01: sheep @ in transit
+  page 02: horse @ barn
+
+time: 15
+blocked on transit
+* barn 00: horse (bit=1)
+  barn 01: empty
+  page 00: chicken @ long-term pasture
+  page 01: sheep @ in transit
+  page 02: horse @ barn
+
+time: 16
+return horse
+* barn 00: empty
+  barn 01: empty
+  page 00: chicken @ long-term pasture
+  page 01: sheep @ long-term pasture
+  page 02: horse @ in transit
+
+time: 17
+* barn 00: empty
+  barn 01: empty
+  page 00: chicken @ long-term pasture
+  page 01: sheep @ long-term pasture
+  page 02: horse @ in transit
+
+time: 18
+* barn 00: empty
+  barn 01: empty
+  page 00: chicken @ long-term pasture
+  page 01: sheep @ long-term pasture
+  page 02: horse @ long-term pasture
+
