@@ -151,8 +151,8 @@ void runElevator(int floors, Rider first, int numRiders){
         }
       }
       if(numWaiting == 0){
-        printf("Average wait time: %.2f\n", (float)waitTime/(float)numRiders);
-        printf("Average utilization: %2d%%\n", (100*inUse)/time);
+        printf("\nAverage wait time: %.2f\n", (float)waitTime/(float)numRiders);
+        printf("Average utilization: %2d%%", (100*inUse)/time);
         break;
       }
     }
