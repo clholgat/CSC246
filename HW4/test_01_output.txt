@@ -1,0 +1,48 @@
+> add nissan-frontier-01
+> add honda-crv-01
+> add honda-crv-02
+> add mini-cooper-01
+> mkfloor subfloor-02
+> mkfloor subfloor-02:subfloor-03
+> ls
+nissan-frontier-01
+honda-crv-01
+honda-crv-02
+mini-cooper-01
+[subfloor-02]
+> cf subfloor-02
+> add chevy-cruze-01
+> add subfloor-03:bmw-335-01
+> ls subfloor-03
+bmw-335-01
+> pwf
+[subfloor-02]
+> cf ..
+> pwf
+[:]
+> add nissan-frontier-01
+Error, duplicate item "nissan-frontier-01" in [:]
+> add subfloor-02:chevy-cruze-01
+Error, duplicate item "chevy-cruze-01" in [subfloor-02]
+> cf ..
+Error, [:] has no parent lot
+> cf subfloor-02:subfloor-04
+Error: subfloor-02:subfloor-04 is not a floor/subfloor
+> ls subfloor-02:subfloor-04
+Error: subfloor-02:subfloor-04 is not a floor/subfloor
+> mkfloor subfloor-03:subfloor-04
+Error: Cannot find subfloor [subfloor-03]
+> rm honda-crv-03
+Error, no item "honda-crv-03" in [:]
+> add honda-crv:03
+Error: Cannot find subfloor [honda-crv]
+> rm honda-crv-01
+> rm subfloor-02:subfloor-03
+> ls subfloor-02
+chevy-cruze-01
+> rm subfloor-02
+> ls
+nissan-frontier-01
+honda-crv-02
+mini-cooper-01
+> end

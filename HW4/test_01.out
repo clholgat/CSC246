@@ -1,0 +1,20 @@
+nissan-frontier-01
+honda-crv-01
+honda-crv-02
+mini-cooper-01
+[subfloor-02]
+bmw-335-01
+:subfloor-02
+:
+Error: Duplicate item "nissan-frontier-01" in [:]
+Error: Duplicate item "chevy-cruze-01" in [subfloor-02]
+Error, [:] has no parent lot
+Error: Cannot find subfloor [subfloor-04]
+Error: Cannot find subfloor [subfloor-04]
+Error: Cannot find subfloor [subfloor-03]
+Error: Cannot find honda-crv-03
+Error: Cannot find subfloor [honda-crv]
+chevy-cruze-01
+nissan-frontier-01
+honda-crv-02
+mini-cooper-01

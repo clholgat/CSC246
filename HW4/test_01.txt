@@ -1,0 +1,28 @@
+add nissan-frontier-01
+add honda-crv-01
+add honda-crv-02
+add mini-cooper-01
+mkfloor subfloor-02
+mkfloor subfloor-02:subfloor-03
+ls
+cf subfloor-02
+add chevy-cruze-01
+add subfloor-03:bmw-335-01
+ls subfloor-03
+pwf
+cf ..
+pwf
+add nissan-frontier-01
+add subfloor-02:chevy-cruze-01
+cf ..
+cf subfloor-02:subfloor-04
+ls subfloor-02:subfloor-04
+mkfloor subfloor-03:subfloor-04
+rm honda-crv-03
+add honda-crv:03
+rm honda-crv-01
+rm subfloor-02:subfloor-03
+ls subfloor-02
+rm subfloor-02
+ls
+end
